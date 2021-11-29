@@ -60,7 +60,7 @@ button:hover{
    height: min-content;
    border: solid black 2px;
    box-sizing: content-box;
-   background-image: url(/2048/src/bender.jpg);
+   background-image: url(./src/bender.jpg);
    background-size: contain;
 }
 .gridRow{
