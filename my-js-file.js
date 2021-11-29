@@ -1,7 +1,7 @@
 var tamGrid = 7;
 var Grid = createArray(tamGrid, tamGrid);
 var level = 00000;
-var tamMax = 500;
+var tamMax = 400;
 const domLevel=document.querySelector("#level")
 soundClick = new Audio(".//");
 

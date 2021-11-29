@@ -42,11 +42,16 @@ button:hover{
     display: none;
 }
 #status{
-    margin: 60px;
+    
+    display: flex;
     padding: 10px;
     font-size: 22px;
     position: fixed;
-   
+    bottom: 5px;
+    align-items: center;
+    
+    width: 100%;
+    justify-content: center;
 }
 #board{
     margin: auto;
@@ -55,6 +60,8 @@ button:hover{
    height: min-content;
    border: solid black 2px;
    box-sizing: content-box;
+   background-image: url(/2048/src/bender.jpg);
+   background-size: contain;
 }
 .gridRow{
     display: flex;
@@ -66,6 +73,7 @@ button:hover{
     width: var(--tamCasilla);
     height: var(--tamCasilla);
     background-color: var(--off);
+    background-color: rgba(255, 255, 0, 0.185);
     border: solid black 1px;
     transition:background-color .5s;
     box-sizing: border-box;
