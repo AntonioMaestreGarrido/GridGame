@@ -11,10 +11,20 @@ inicio()
 
 function inicio(){
   var divInicio= document.querySelector("#inicio")
+  divInicio.innerHTML=""
   creaDomElemento("p","Hi!,welcome to this little game with no name yet.","",divInicio)
   var b1=creaDomElemento("button","Start","boton",divInicio)
   b1.addEventListener("click",startGame)
   var b2=creaDomElemento("button","Help","boton",divInicio)
+  b2.addEventListener("click",help)
+}
+function help(){
+  var divInicio= document.querySelector("#inicio")
+  divInicio.innerHTML=""
+  creaDomElemento("p","El objetivo del juego es superar niveles eliminando todos los cuadros negros,cada vez que hagas click en un cuadrado este cambiara de color, pero cuidado!tambien cambia los adyacentes ortogonalmente! ","",divInicio)
+  var b1=creaDomElemento("button","Back","boton",divInicio)
+  b1.addEventListener("click",inicio)
+
 }
 function startGame(){
   document.querySelector("#inicio").style.display="none"
